@@ -1,0 +1,243 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .logo .logos {
+    width: 25px;
+    height: 25px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .logo .text {
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.header .logo .logos div {
+    width: 13px;
+    height: 13px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.header .nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header .nav .login {
+    display: flex;
+    gap: 10px;
+}
+
+.header .nav .shop {
+    display: flex;
+    position: relative;
+}
+.header .nav .shop .a i{
+    font-size: 22px;
+}
+.header .nav .shop p{
+    position: absolute;
+    font-size: 10px;
+    left: 12px;
+}
+.header .nav div .burger {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+}
+.menu-nav .nav div .burgers {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+}
+.header .nav div .burger input {
+    display: none;
+}
+
+.header .nav div .burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #fff;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+.menu-nav .nav div .burgers span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #fff;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+.menu-nav .nav div .burgers span:nth-of-type(1){
+    transform: rotate(-45deg);
+        top: 10px;
+        left: 5px;
+}
+.menu-nav .nav div .burgers span:nth-of-type(2) {
+    transform: rotate(45deg);
+    top: 10px;
+    left: 5px;
+}
+.header .nav .mb-nav{
+    display: none;
+}
+.header .nav div .burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+}
+
+.header .nav div .burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+}
+
+.header .nav div .burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+}
+
+.header .nav div .burger input:checked~span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+}
+
+.header .nav .mb-nav .burger input:checked~span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+.header .nav .mb-nav .burger input:checked~span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+}
+
+.header .nav .button {
+    padding: 10px 30px;
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 17px;
+    transition: 0.5s;
+    background: #a238ff;
+    box-shadow: 0 0 25px rgba(125, 43, 196, 1);
+    transition: all 1s;
+    cursor: pointer;
+}
+.header .nav .button:hover{
+    background: #fff;
+    color: black;
+    transition: background 1s;
+}
+
+.header .nav .button:hover .a{
+  color: black;
+  transition: color 1s;
+}
+.menu-nav .menu-s .buttons {
+    padding: 10px 30px;
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 17px;
+    transition: 0.5s;
+    background: #a238ff;
+    box-shadow: 0 0 25px rgba(125, 43, 196, 1);
+}
+
+.a {
+    text-decoration: none;
+    color: #fff;
+}
+ .menu-nav{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;    
+}
+.menu-nav .menu .logins{
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    gap: 10px;
+}
+.menu-nav .menu .logins .a i{
+    font-size: 25px;
+}
+.menu-nav .menu-s{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.menu-nav .menu-s .sss{
+    font-size: 20px;
+}
+@media (max-width:970px) {
+
+    .header{
+        padding: 30px 40px;
+    }
+         .menu-nav {
+             
+             padding: 30px 40px;
+         }
+
+ 
+}
+.colors{
+    transition: color 1s;
+}
+.header .nav .colors:hover { 
+  color: #c27dff;
+}
+@media (max-width:600px) {
+.header .nav .mb-nav {
+        display: block;
+    }
+
+    .header .nav .button,
+    .header .nav .login,
+    .header .nav .sss {
+        display: none;
+    }
+}
