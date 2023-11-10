@@ -10,6 +10,9 @@ function Home(){
         SetSeb(true)
         console.log(seb)
     }
+    const close=()=>{
+        SetSeb(false);
+    }
     return (
       <div className="home">
         <Navbar seb={opes} />
@@ -26,7 +29,15 @@ function Home(){
             <img src={background} alt="" />
           </div>
         </div>
-        {seb ? <div className="sebet">hello</div> : null}
+        { seb ?(<div className="sebet">
+          <div className="text">
+            <div onClick={close} className="close"></div>
+            <div>
+              <h3>Alışveriş Sepeti</h3>
+            </div>
+          </div>
+          <div className="seb">sebet bos</div>
+        </div>):null}
       </div>
     );
 }
