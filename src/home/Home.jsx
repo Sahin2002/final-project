@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './Home.css';
+import '../fonts/font.css'
 import background from'../image/trackmate.webp';
 import Navbar from "../navbar/Navbar";
 
@@ -17,11 +18,11 @@ function Home(){
             <h3>Günlük Rutininizi Yaratın</h3>
             <h1>0.4 TrackMate XE</h1>
             <h3>Her adımınızda sizi motive eden sağlık takip cihazı</h3>
-            <div>
+            <div className="button">
               <button>Hemen Al</button>
             </div>
           </div>
-          <div>
+          <div className="image">
             <img src={background} alt="" />
           </div>
         </div>

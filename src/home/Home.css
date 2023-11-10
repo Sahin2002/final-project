@@ -10,13 +10,41 @@
 .section-1{
     display: flex;
     justify-content: space-between;
-    padding: 200px 80px;
+    padding: 160px 80px;
     color: #fff;
+    
 }
 .section-1 div h1{
     font-size: 75px;
     margin: 20px 0;
+    font-weight: normal;
+    position: relative;
+    z-index: 2;
 }
-.section-1 div h2{
+.section-1 div h3{
     font-size: 25px;
+    font-weight: normal;
+    position: relative;
+    z-index: 2;
+}
+.section-1 div .button button{
+    padding: 13px 50px;
+        border: none;
+        color: #fff;
+        border-radius: 20px;
+        font-size: 17px;
+        transition: 0.5s;
+        background: #a238ff;
+        box-shadow: 0 0 25px rgba(125, 43, 196, 1);
+        transition: all 1s;
+        cursor: pointer;
+        margin-top: 20px;
+}
+.section-1 .image{
+    transform: rotate(-8deg);
+    position: relative;
+    z-index: 0;
+}
+.section-1 .image img{
+    width: 100%;
 }
