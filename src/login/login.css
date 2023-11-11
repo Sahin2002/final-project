@@ -1,0 +1,67 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.main .con{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+.main .con  .close {
+    position: relative;
+        width: 40px;
+        height: 30px;
+        background: transparent;
+        cursor: pointer;
+        display: block;
+}
+.main .con  .close span{
+
+    display: inline-block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #fff;
+    border-radius: 9px;
+    opacity: 1;
+ left: 0;
+
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.main .con  .close span:nth-of-type(1) {
+    transform: rotate(-45deg);
+    top: 10px;
+    left: 5px;
+}
+
+.main .con  .close span:nth-of-type(2) {
+    transform: rotate(45deg);
+    top: 10px;
+    left: 5px;
+}
+.main .demo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.main .demo h1{
+    font-size: 50px;
+    font-weight: normal;
+}
+.main .demo button{
+    padding: 10px 50px;
+    background-color: #a238ff;
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    outline: none;
+}

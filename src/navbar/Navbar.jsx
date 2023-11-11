@@ -20,7 +20,7 @@ return (
       <div className="menu-nav">
         <div className="menu">
           <div className="logins">
-            <Link className="a" to="/Login">
+            <Link className="a" to="/login">
               <i class="fa-solid fa-user"></i>
             </Link>
             <Link className="a" to="/Sss">
@@ -73,7 +73,7 @@ return (
                 <i class="fa-solid fa-user"></i>
               </Link>
             </div>
-            <Link className="a" to="/Login">
+            <Link className="a" to="/login">
               <p className="colors">Giris</p>
             </Link>
           </div>
