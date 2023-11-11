@@ -63,7 +63,7 @@ return (
         </div>
         <div className="nav">
           <div className="">
-            <Link className="a colors" to="/Sss">
+            <Link className="a sss colors" to="/Sss">
               SSS
             </Link>
           </div>

@@ -6,7 +6,7 @@ import Navbar from "../navbar/Navbar";
 
 function Home(){
     const [seb,SetSeb]=useState(false);
-    const  opes=()=>{
+    const  open=()=>{
         SetSeb(true)
         console.log(seb)
     }
@@ -15,7 +15,7 @@ function Home(){
     }
     return (
       <div className="home">
-        <Navbar seb={opes} />
+        <Navbar seb={open} />
         <div className="section-1">
           <div>
             <h3>Günlük Rutininizi Yaratın</h3>
