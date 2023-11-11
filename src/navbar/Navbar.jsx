@@ -78,9 +78,7 @@ return (
             </Link>
           </div>
           <div className="shop">
-            <Link onClick={seb} className="a" to="/">
-              <i class="fa-solid fa-cart-shopping"></i>
-            </Link>
+              <i onClick={seb} class="fa-solid fa-cart-shopping"></i>
             <p>{num}</p>
           </div>
           <div className="mb-nav">

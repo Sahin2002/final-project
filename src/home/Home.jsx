@@ -3,7 +3,7 @@ import './Home.css';
 import '../fonts/font.css'
 import background from'../image/trackmate.webp';
 import Navbar from "../navbar/Navbar";
-
+import Sebet from "../sebet/Sebet";
 function Home(){
     const [seb,SetSeb]=useState(false);
     const  open=()=>{
@@ -29,15 +29,7 @@ function Home(){
             <img src={background} alt="" />
           </div>
         </div>
-        { seb ?(<div className="sebet">
-          <div className="text">
-            <div onClick={close} className="close"></div>
-            <div>
-              <h3>Alışveriş Sepeti</h3>
-            </div>
-          </div>
-          <div className="seb">sebet bos</div>
-        </div>):null}
+         {seb ? <Sebet seb={close}  />:null }
       </div>
     );
 }

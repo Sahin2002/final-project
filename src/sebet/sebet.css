@@ -1,0 +1,37 @@
+.sebet {
+    width: 25%;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    color: #fff;
+    transition: all 2s;
+}
+
+.sebet .text {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 30px;
+    gap: 60px;
+    text-align: center;
+
+}
+
+.sebet .text .close {
+    width: 10px;
+    height: 10px;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.sebet .seb {
+    text-align: center;
+    padding-top: 40px;
+}
