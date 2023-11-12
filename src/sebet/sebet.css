@@ -35,3 +35,35 @@
     text-align: center;
     padding-top: 40px;
 }
+@media (max-width:970px) {
+.sebet {
+        width: 40%;
+        
+    }
+}
+@media (max-width:600px){
+    .sebet {
+            width: 100%;
+    
+        }
+                .sebet .text {
+                    width: 100%;
+                    background-color: black;
+                    display: flex;
+                    align-items: center;
+                    color: #fff;
+                    padding: 30px;
+                    gap: 60px;
+                    text-align: center;
+        
+                }
+        
+                .sebet .text .close {
+                    width: 10px;
+                    height: 10px;
+                    border-right: 1px solid #fff;
+                    border-top: 1px solid #fff;
+                    transform: rotate(45deg);
+                    cursor: pointer;
+                }
+}
