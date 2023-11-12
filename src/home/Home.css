@@ -56,19 +56,28 @@
     background-color: #222323;
     padding: 40px 0;
     display: flex;
-   justify-content: space-between; 
+   justify-content: space-between;
+   color: #fff; 
 }
 .section-2 .image1{
     width: 70%;
     height: 88vh;
     background-image: url('../image/section-2-background.png');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
    
     
 }
 .section-2 .image1 .text {
     margin:60px 40px;
+}
+.section-2 .image1 .text div h1{
+    max-width: 300px;
+    margin: 20px 0;
+}
+.section-2 .image1 .text div p{
+    max-width: 480px;
+    line-height: 20px;
 }
 .section-2 .image1 .text .icons{
     display: flex;
