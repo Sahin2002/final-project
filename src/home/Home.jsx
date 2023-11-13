@@ -94,6 +94,9 @@ function Home(){
             <button>Hemen Al</button>
           </div>
         </div>
+        <div className="section-5">
+
+        </div>
         {seb ? <Sebet seb={close} /> : null}
       </div>
     );

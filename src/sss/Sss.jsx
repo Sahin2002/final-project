@@ -52,7 +52,7 @@ function Sss() {
                       yardım eder ve hatta sitenizin SEO'sunu geliştirebilir.
                     </p>
 
-                    <img src={Icon} alt="" />
+                    <img className="img" src={Icon} alt="" />
                     <ul>
                       <li>
                         <i class="fa-brands fa-facebook"></i>
