@@ -4,6 +4,8 @@ import '../fonts/font.css'
 import Trackmate from'../image/track.webp';
 import icon from'../image/section-2-icon.png';
 import smart from'../image/smart.png';
+import smarts from'../image/section-3-smartsaat.png';
+import messeger from"../image/messeger.png";
 import Navbar from "../navbar/Navbar";
 import Sebet from "../sebet/Sebet";
 function Home(){
@@ -50,7 +52,28 @@ function Home(){
           </div>
           <div className="image2">
             <div className="section2-image">
-              <img src={smart} alt="" />
+              <img src={smart} alt="smart" />
+            </div>
+          </div>
+        </div>
+        <div className="section-3">
+          <div className="left">
+            
+              <img src={smarts} alt="smarts" />
+            
+          </div>
+          <div className="right">
+            <div>
+              <img src={messeger} alt="messger" />
+              <span>BİLDİRİM SİSTEMİ</span>
+            </div>
+            <div>
+              <h1>Programa Uymanız için Hatırlatmalar</h1>
+              <p>
+                Bu, bir paragraf. Kendi metninizi eklemek için tıklayın.
+                İçeriğinizi eklemek ve yazı tipini değiştirmek için “Metni
+                Düzenle”ye tek tıklayın veya buraya çift tıklayın.
+              </p>
             </div>
           </div>
         </div>
