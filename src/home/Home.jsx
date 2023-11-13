@@ -8,6 +8,7 @@ import smarts from'../image/section-3-smartsaat.png';
 import messeger from"../image/messeger.png";
 import goz from'../image/goz.png';
 import smartsaat from'../image/section-4.png';
+import section5icon from'../image/section-5. icons.png';
 import Navbar from "../navbar/Navbar";
 import Sebet from "../sebet/Sebet";
 function Home(){
@@ -95,7 +96,18 @@ function Home(){
           </div>
         </div>
         <div className="section-5">
-
+          <div>
+            <img src={section5icon} alt="" />
+            <span>UYARI SİSTEMİ</span>
+          </div>
+          <div>
+            <h1>Bedeniniz Size Rehberlik Etsin</h1>
+            <p>
+              Bu, bir paragraf. Kendi metninizi eklemek için tıklayın.
+              İçeriğinizi eklemek ve yazı tipini değiştirmek için “Metni
+              Düzenle”ye tek tıklayın veya buraya çift tıklayın.
+            </p>
+          </div>
         </div>
         {seb ? <Sebet seb={close} /> : null}
       </div>
