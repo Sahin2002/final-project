@@ -6,6 +6,8 @@ import icon from'../image/section-2-icon.png';
 import smart from'../image/smart.png';
 import smarts from'../image/section-3-smartsaat.png';
 import messeger from"../image/messeger.png";
+import goz from'../image/goz.png';
+import smartsaat from'../image/section-4.png';
 import Navbar from "../navbar/Navbar";
 import Sebet from "../sebet/Sebet";
 function Home(){
@@ -58,9 +60,7 @@ function Home(){
         </div>
         <div className="section-3">
           <div className="left">
-            
-              <img src={smarts} alt="smarts" />
-            
+            <img src={smarts} alt="smarts" />
           </div>
           <div className="right">
             <div>
@@ -75,6 +75,23 @@ function Home(){
                 Düzenle”ye tek tıklayın veya buraya çift tıklayın.
               </p>
             </div>
+          </div>
+        </div>
+        <div className="section-4">
+          <div>
+            <img src={goz} alt="goz" />
+            <h1>Tarzınıza Uygun Kayış Seçenekleri</h1>
+            <p>
+              Bu, bir paragraf. Kendi metninizi eklemek için tıklayın.
+              İçeriğinizi eklemek ve yazı tipini değiştirmek için “Metni
+              Düzenle”ye tek tıklayın veya buraya çift tıklayın.
+            </p>
+          </div>
+          <div>
+            <img src={smartsaat} alt="saat" />
+          </div>
+          <div className="button">
+            <button>Hemen Al</button>
           </div>
         </div>
         {seb ? <Sebet seb={close} /> : null}
