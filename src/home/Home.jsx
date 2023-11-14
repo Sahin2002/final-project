@@ -9,6 +9,11 @@ import messeger from"../image/messeger.png";
 import goz from'../image/goz.png';
 import smartsaat from'../image/section-4.png';
 import section5icon from'../image/section-5. icons.png';
+import section6 from'../image/section-6-saat.png';
+import pil from'../image/pil.png';
+import kablosuz from'../image/kablusuz0sarj.png';
+import bluetooh from'../image/bluetoh.png';
+import su from'../image/su.png';
 import Navbar from "../navbar/Navbar";
 import Sebet from "../sebet/Sebet";
 function Home(){
@@ -108,6 +113,47 @@ function Home(){
               Düzenle”ye tek tıklayın veya buraya çift tıklayın.
             </p>
           </div>
+        </div>
+        <div className="section-6">
+          <h1>0.4 TrackMate XE Teknik Özellikler</h1>
+          <img src={section6} alt="" />
+          <div className="section-6-main">
+            <div className="div">
+              <div>
+                <img src={pil} alt="" />
+                <span>20 Saat Pil Ömrü</span>
+              </div>
+              <p>Bu, bir paragraf. Kendi metninizi eklemek için tıklayın.</p>
+            </div>
+            <div className="div">
+              <div>
+                <img src={bluetooh} alt="" />
+                <span>Bluetooth Bağlantısı</span>
+              </div>
+              <p>Bu, bir paragraf. Kendi metninizi eklemek için tıklayın.</p>
+            </div>
+            <div className="div">
+              <div>
+                <img src={kablosuz} alt="" />
+                <span>Kablosuz Şarj</span>
+              </div>
+              <p>Bu, bir paragraf. Kendi metninizi eklemek için tıklayın.</p>
+            </div>
+            <div className="div">
+              <div>
+                <img src={su} alt="" />
+                <span>Suya Dayanıklılık</span>
+              </div>
+              <p>Bu, bir paragraf. Kendi metninizi eklemek için tıklayın.</p>
+            </div>
+          </div>
+          <div className="button">
+            <button>Hemen Al</button>
+          </div>
+        </div>
+        <div className="section-7">
+          <div></div>
+          <div></div>
         </div>
         {seb ? <Sebet seb={close} /> : null}
       </div>
