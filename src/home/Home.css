@@ -702,6 +702,10 @@
         max-width: 360px;
     }
 
+    .section-8 .section-header img {
+        width: 10%;
+    }
+
     /* section-9 */
     .section-9 span {
         display: none;
