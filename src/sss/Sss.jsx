@@ -28,7 +28,7 @@ function Sss() {
         <h1>SSS</h1>       
         
         <div className="list">
-          <ul className="menu">
+          <ul className="menu ul">
             <li onClick={closes}>SSS'lerin Ayarlanması</li>
             <li onClick={opens}>Genel</li>
           </ul>
@@ -53,7 +53,7 @@ function Sss() {
                     </p>
 
                     <img className="img" src={Icon} alt="" />
-                    <ul>
+                    <ul className="ul">
                       <li>
                         <i class="fa-brands fa-facebook"></i>
                       </li>
@@ -98,7 +98,7 @@ function Sss() {
                       sıralarını değiştirebilir ve başka kategoriler
                       seçebilirsiniz.
                     </p>
-                    <ul>
+                    <ul className="ul">
                       <li>
                         <i class="fa-brands fa-facebook"></i>
                       </li>
@@ -139,7 +139,7 @@ function Sss() {
                       </li>
                       <li>Kütüphanenizden medya ekleyin ve kaydedin</li>
                     </ol>
-                    <ul>
+                    <ul className="ul">
                       <li>
                         <i class="fa-brands fa-facebook"></i>
                       </li>
@@ -169,7 +169,7 @@ function Sss() {
                       'Gösterilecek Bilgiler' altından başlığı devre dışı
                       bırakın.
                     </p>
-                    <ul>
+                    <ul className="ul">
                       <li>
                         <i class="fa-brands fa-facebook"></i>
                       </li>

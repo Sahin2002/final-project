@@ -1,0 +1,9 @@
+.urun {
+    width: 100%;
+    background-color: #232323;
+}
+.divs{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 120px;
+}

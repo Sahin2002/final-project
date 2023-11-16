@@ -19,6 +19,7 @@ import su from'../image/su.png';
 import icon2 from'../image/section-8-icons.png';
 import smartsaat2 from'../image/section-8-smartsaat.png';
 import Navbar from "../navbar/Navbar";
+import Footer from'../footer/footer';
 import Sebet from "../sebet/Sebet";
 function Home(){
     const [seb,SetSeb]=useState(false);
@@ -191,6 +192,7 @@ function Home(){
           </div>
           <span>Tesekkur ederiz !</span>
         </div>
+        <Footer />
         {seb ? <Sebet seb={close} /> : null}
       </div>
     );

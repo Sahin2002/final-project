@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     color: #fff;
-    padding: 100px 50px;
+    padding: 100px 40px;
 
 }
 
@@ -75,12 +75,12 @@
     background-image: url('../image/section-2-background.png');
     background-repeat: no-repeat;
     background-size: cover;
-
+    background-position: center;
 
 }
 
 .section-2 .image1 .text {
-    margin: 60px 40px;
+    padding: 60px 40px;
 }
 
 .section-2 .image1 .text div h1 {
@@ -100,7 +100,7 @@
 }
 
 .section-2 .image1 .text .icons img {
-    width: 5%;
+    width: 8%;
 }
 
 .section-2 .image2 {
@@ -246,6 +246,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: top;
     color: #fff;
     padding: 120px 180px;
 }
@@ -736,5 +737,86 @@
 
     .section-9 .input-text button {
         position: static;
+    }
+}
+
+@media (max-width:600px) {
+    .section-1 .text h1 {
+        font-size: 30px;
+    }
+
+    .section-2 .image1 .text {
+        padding: 30px 20px;
+    }
+
+    .section-2 .image1 .text div h1 {
+        font-size: 25px;
+    }
+
+    .section-2 .image1 .text .icons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-3 .right div:last-child h1 {
+        font-size: 25px;
+    }
+
+    .section-4 {
+        padding: 80px 20px;
+    }
+
+    .section-4 div:first-child h1 {
+        font-size: 25px;
+    }
+
+    .section-5 {
+        padding: 40px 20px;
+    }
+
+    .section-5 div:last-child h1 {
+        font-size: 25px;
+    }
+
+    .section-6 h1 {
+        font-size: 25px;
+    }
+
+    .section-6 h1 {
+        padding: 0 20px;
+    }
+
+    .section-6 .section-6-main .div{
+        width: fit-content;
+    } .section-7 div h1 {
+        font-size: 25px;
+    }
+
+    .section-7 div:last-child {
+        padding: 0 20px;
+    }
+
+    .section-8 {
+        padding: 40px 20px;
+    }
+
+    .section-8 .section-header h1 {
+        font-size: 25px;
+    }
+
+    .section-9 {
+        padding: 20px;
+    }
+
+    .section-9 h1 {
+        font-size: 25px;
+    }
+
+    .section-9 .email .input-text input {
+        width: 100%;
+    }
+
+    .section-3 .right {
+        padding: 20px;
     }
 }

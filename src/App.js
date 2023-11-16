@@ -4,6 +4,7 @@ import './fonts/font.css';
 import Home from'./home/Home';
 import Sss from'./sss/Sss';
 import Login from './login/Login';
+import Saat from'./smartsaat/smartsaat';
 import{Routes,Route} from'react-router-dom';
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/Sss" element={<Sss />}></Route>
         <Route path="/login" element={<Login />}></Route>
+        <Route path="/Urun" element={<Saat />}></Route>
       </Routes>
     </div>
   );
