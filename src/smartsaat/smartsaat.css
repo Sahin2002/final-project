@@ -5,5 +5,88 @@
 .divs{
     display: flex;
     justify-content: space-between;
-    padding: 80px 120px;
+    padding: 80px 180px;
+   gap: 20px;
+    color: #fff;
+}
+.divs .left img{
+  width: 100%;
+}
+.divs .left p{
+    margin: 40px 0;
+  max-width: 450px;    
+}
+.divs .right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.divs .right h1{
+    font-size: 40px;
+}
+.divs .right .colors .color{
+    display: flex;
+    gap: 13px;
+    margin-top: 20px;
+}
+.divs .right .colors .color div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.divs .right .colors .color div:hover{
+    
+    transform: scale(1.2);
+}
+.divs .right .colors .color .beyaz{
+    background-color: #fff;
+}
+
+.divs .right .colors .color .siyah{
+    background-color: black;
+}
+.divs .right .colors .color .mavi {
+    background-color: blue;
+}
+.divs .right .colors .color .mor{
+    background-color: #a238ff;
+}
+.divs .right .colors .color .turkaz {
+    background-color:aqua ;
+}
+.divs .right .number{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+.divs .right .number span:first-child{
+    display: inline-block;
+    margin-top: 20px ;
+}
+.divs .right .number input{
+    width: 18%;
+    padding: 5px 10px;
+}
+.divs .right .number .button{
+    margin: 30px 0;
+}
+.divs .right .number .button button {
+   width: 350px;
+   padding: 10px 20px;
+   border-radius: 30px;
+   border: none;
+   background-color: #a238ff;
+   color: #fff;
+}
+.divs .right .about div div{
+    display: none;
+}
+.divs .right .about div{
+    padding: 30px 10px ;
+    border-bottom: 1px solid #fff;
+}
+.divs .right .about div:last-child{
+    border: none;
 }

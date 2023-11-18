@@ -4,7 +4,7 @@ import './fonts/font.css';
 import Home from'./home/Home';
 import Sss from'./sss/Sss';
 import Login from './login/Login';
-import Saat from'./smartsaat/smartsaat';
+import Saat from'./smartsaat/Smartsaat';
 import{Routes,Route} from'react-router-dom';
 function App() {
   return (
