@@ -1,6 +1,6 @@
 import React from "react";
 import './sebet.css';
-function Sebet({seb}){
+function Sebet({seb,nev}){
     console.log(seb)
     
     return (
@@ -13,7 +13,11 @@ function Sebet({seb}){
                 <h3>Alışveriş Sepeti</h3>
               </div>
             </div>
-            <div className="seb">sebet bos</div>
+            <div className="seb">
+             <div>
+                
+             </div>
+            </div>
           </div>
         
       </div>

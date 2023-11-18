@@ -83,10 +83,37 @@
 .divs .right .about div div{
     display: none;
 }
+.divs .right .about div div p{
+    max-width: 350px;
+}
+.divs .right .about div:hover div{
+    display: block;
+}
 .divs .right .about div{
     padding: 30px 10px ;
     border-bottom: 1px solid #fff;
 }
 .divs .right .about div:last-child{
     border: none;
+}
+@media (max-width:970px) {
+    .divs{
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 60px;
+    }
+        .divs .right h1{
+            font-size: 30px;
+        }
+}
+@media (max-width:600px) {
+    .divs{
+        padding: 40px;
+    }
+        .divs .right h1{
+            font-size: 25px;
+        }
+        .divs .right .number .button button{
+            width: 250px;
+        }
 }

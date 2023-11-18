@@ -777,7 +777,12 @@
     .section-5 div:last-child h1 {
         font-size: 25px;
     }
-
+.section-6 .section-6-main{
+    align-items: center;
+}
+.section-6 .section-6-main .div{
+    width: 90%;
+}
     .section-6 h1 {
         font-size: 25px;
     }
@@ -786,9 +791,7 @@
         padding: 0 20px;
     }
 
-    .section-6 .section-6-main .div{
-        width: fit-content;
-    } .section-7 div h1 {
+     .section-7 div h1 {
         font-size: 25px;
     }
 
@@ -815,6 +818,7 @@
     .section-9 .email .input-text input {
         width: 100%;
     }
+        
 
     .section-3 .right {
         padding: 20px;
