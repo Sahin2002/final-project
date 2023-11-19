@@ -33,7 +33,21 @@
 
 .sebet .seb {
     text-align: center;
-    padding-top: 40px;
+   height: 100vh;
+    overflow-y:scroll;
+}
+.sebet .seb .urunler{
+    display: flex;
+    padding: 30px 20px;
+    border-bottom: 1px solid #777;
+}
+.sebet .seb .urunler  img{
+  width: 30%;
+}
+.sebet .seb .urunler .urun-about{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 @media (max-width:970px) {
 .sebet {

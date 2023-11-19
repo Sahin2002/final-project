@@ -16,29 +16,39 @@ function Smartsaat() {
   const [sent] = useState(850.0);
   const [img, setImg] = useState(beyaz);
   const [color, setColor] = useState("beyaz");
-  const [deyer, setDeyer] = useState(0);
+  const [deyer, setDeyer] = useState(1);
   const dey = (event) => {
     setDeyer(event.target.value);
     console.log(event.target.value * sent);
   };
-  const uruns = {
-    ad: name,
-    qiymet: sent,
-    rengi: color,
-    resim: img,
-    sayi: deyer,
-  };
+  
+  const [uruns, setUruns] = useState([]);
+ 
+ 
   const urun = (event) => {
     setColor(event.target.className);
     setImg(event.target.id);
   };
-  console.log(uruns);
+  
   const open = () => {
     setSeb(true);
   };
   const close = () => {
     setSeb(false);
   };
+  const siparis=()=>{
+   const newProduct = {
+     ad: name,
+     qiymet: sent,
+     rengi: color,
+     resim: img,
+     sayi: deyer,
+   };
+
+   setUruns((prevUruns) => [...prevUruns, newProduct]);  
+   console.log(uruns)
+    
+  }
 
   return (
     <div className="urun">
@@ -63,15 +73,15 @@ function Smartsaat() {
               <div onClick={urun} className="siyah" id={siyah}></div>
               <div onClick={urun} className="mavi" id={mavi}></div>
               <div onClick={urun} className="mor" id={mor}>
-                {" "}
+                
               </div>
               <div onClick={urun} className="turkaz" id={turkaz}></div>
             </div>
             <div className="number">
               <span>Adet</span>
-              <input onClick={dey} type="number" min={1} name="" id="" />
+              <input onClick={dey} type="number" placeholder="1"  min={1} name="" id="" />
               <div className="button">
-                <button>Sebet ekle</button>
+                <button onClick={siparis}>Sebet ekle</button>
               </div>
             </div>
           </div>
@@ -114,7 +124,6 @@ function Smartsaat() {
               </div>
             </div>
           </div>
-          <div className="sosyal-media"></div>
         </div>
       </div>
       <Footer />
