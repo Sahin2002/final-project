@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import './Navbar.css'
 import { Link } from "react-router-dom";
-function Navbar({seb}){
-    const [num]=useState(0);
+function Navbar({seb,uru}){
+    
     const [navs,setNavs]=useState(false);
         
     
@@ -79,7 +79,7 @@ return (
           </div>
           <div className="shop">
               <i onClick={seb} class="fa-solid fa-cart-shopping"></i>
-            <p>{num}</p>
+            <p>{uru}</p>
           </div>
           <div className="mb-nav">
             <label class="burger" for="burger">

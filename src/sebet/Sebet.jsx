@@ -1,9 +1,9 @@
 import React from "react";
 import './sebet.css';
-function Sebet({seb,nev}){
+function Sebet({seb,nev,sel}){
     console.log(seb)
 console.log(nev.rengi)    
-  
+
     return (
       <div>
         <div className="sebet">
@@ -16,16 +16,21 @@ console.log(nev.rengi)
           <div className="seb">
             {nev.map((item, index) => (
               <div className="urunler" key={index}>
-                
-                  <img src={item.resim} alt="" />
-                
+                <img src={item.resim} alt="" />
+
                 <div className="urun-about">
                   <span>{item.ad}</span>
                   <span>{item.qiymet}</span>
                   <span>{item.sayi}</span>
                 </div>
+                <div className="cl">
+                  <i onClick={sel} class="fa-solid fa-x"></i>
+                </div>
               </div>
             ))}
+            <div className="fiyat">
+              <h3></h3>
+            </div>
           </div>
         </div>
       </div>
