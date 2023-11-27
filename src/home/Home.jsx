@@ -22,9 +22,10 @@ import Navbar from "../navbar/Navbar";
 import Footer from'../footer/footer';
 import Sebet from "../sebet/Sebet";
 function Home(){
-    
 
+    
     const [seb,SetSeb]=useState(false);
+   
     const  open=()=>{
         SetSeb(true)
         console.log(seb)
@@ -195,7 +196,9 @@ function Home(){
           <span>Tesekkur ederiz !</span>
         </div>
         <Footer />
-        {seb ? <Sebet seb={close}  /> : null}
+        {seb ? (
+          <Sebet seb={close}   />
+        ) : null}
       </div>
     );
 }

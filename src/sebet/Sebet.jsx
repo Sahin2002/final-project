@@ -1,8 +1,10 @@
-import React from "react";
+import React,{useState} from "react";
 import './sebet.css';
 function Sebet({seb,nev,sel}){
+
+
     console.log(seb)
-console.log(nev.rengi)    
+console.log()    
 
     return (
       <div>
@@ -14,8 +16,8 @@ console.log(nev.rengi)
             </div>
           </div>
           <div className="seb">
-            {nev.map((item, index) => (
-              <div className="urunler" key={index}>
+            {nev.map((item) => (
+              <div className="urunler">
                 <img src={item.resim} alt="" />
 
                 <div className="urun-about">

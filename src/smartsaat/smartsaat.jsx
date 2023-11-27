@@ -15,11 +15,19 @@ function Smartsaat() {
   const [seb, setSeb] = useState(false);
   const [sent] = useState(850.0);
   const [img, setImg] = useState(beyaz);
-  const [color, setColor] = useState("beyaz");
+  const [color, setColor] = useState();
   const [deyer, setDeyer] = useState(1);
   const [uruns, setUruns] = useState([]);
   const [umumi, setUmumi] = useState(uruns.length);
   const[id,setId]=useState(1)
+  const date = {
+    ids: id,
+    ad: name,
+    rengi:color,
+    qiymet: sent,
+    resim: img,
+    sayi: deyer,
+  };
   const dey = (event) => {
     setDeyer(event.target.value);
     
@@ -42,20 +50,13 @@ function Smartsaat() {
   };
   const siparis=(idxs)=>{
    
-    const newProduct = {
-      ids: id,
-      ad: name,
-      qiymet: sent,
-      rengi: color,
-      resim: img,
-      sayi: deyer,
-    };
+    
     
    
-    const del =[...uruns.filter((item) => item.rengi !== idxs )];
+    const del =[...uruns.filter((item) => item.resim !== idxs )];
     
    setId(id+1)
-   setUruns([...del,newProduct]);  
+   setUruns([...del,date]);  
    setUmumi(del.length+1);
     console.log(umumi);
      setSeb(true);
@@ -107,7 +108,7 @@ return(
               id=""
             />
             <div className="button">
-              <button onClick={()=>siparis(color)}>Sebet ekle</button>
+              <button onClick={()=>siparis(img)}>Sebet ekle</button>
             </div>
           </div>
         </div>
